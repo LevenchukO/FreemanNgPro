@@ -1,0 +1,72 @@
+<div class="container pt-3">
+  <div class="bg-info p-3">
+    There are {{model.getProducts().length}} products in the model
+  </div>
+
+  <div [ngClass]="'mt-2 p-1 ' + getClasses(2)"
+       [textContent]="'Name: ' + (model.getProduct(5)?.name || 'None')">
+  </div>
+
+  <div class="form-group m-3">
+    <label>Name:</label>
+    <input class="form-control" [value]="model.getProduct(2)?.name || 'None'"/>
+  </div>
+
+  <table class="table table-sm table-bordered table-striped mt-1">
+    <tr>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+      <th>5</th>
+    </tr>
+    <tr>
+      <td [attr.colspan]="model.getProducts().length">
+        {{model.getProduct(1)?.name || 'None'}}
+      </td>
+    </tr>
+  </table>
+
+  <div [class]="getClasses(2)">
+    The first product is {{model.getProduct(2).name}}.
+  </div>
+  <div [class]="getClasses(2)">
+    The second product is {{model.getProduct(2).name}}
+  </div>
+
+  <div [class]="getClasses(2)">
+    The first product is {{model.getProduct(2).name}}.
+  </div>
+  <div class="p-3"
+       [class.bg-success]="model.getProduct(2).price < 50"
+       [class.bg-info]="model.getProduct(2).price >= 50"
+  >
+    The second product is {{model.getProduct(2).name}}
+  </div>
+
+
+  <div class="p-3" [ngClass]="getClassMap(4)"> The first product is {{model.getProduct(4).name}}.</div>
+  <div class="p-3" [ngClass]="getClassMap(2)"> The second product is {{model.getProduct(2).name}}.</div>
+  <div class="p-3"
+       [ngClass]="{'bg-success': model.getProduct(3).price < 50,
+                                      'bg-info': model.getProduct(3).price >= 50}">
+    The third product is {{model.getProduct(3).name}}
+  </div>
+
+
+  <div class="p-3 bg-warning">
+    The <span [style.fontSize]="fontSizeWithUnits">first</span> product is
+    {{model.getProduct(3).name}}.
+  </div>
+  <div class="p-2 bg-info">
+    The <span [style.fontSize.px]="fontSizeWithoutUnits">second</span> product is
+    {{model.getProduct(2).name}}
+  </div>
+
+  <div>---------------------------</div>
+
+  <div [ngClass]="getClassesByPosition(0)"> The first product is {{getProductByPosition(0).name}}.</div>
+  <div [ngClass]="getClassesByPosition(1)"> The second product is {{getProductByPosition(1).name}}</div>
+
+
+</div>

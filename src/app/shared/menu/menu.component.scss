@@ -1,0 +1,163 @@
+header{
+  //margin-top: 200px;
+  font-family: Cuprum, Arial, sans-serif;
+}
+
+.dws-menu, ul{
+  margin: 0;
+  padding: 0;
+}
+.dws-menu ul, .dws-menu ol{
+  list-style: none;
+}
+.dws-menu > ul{
+  display: flex;
+  justify-content: center;
+
+}
+.dws-menu > ul li a{
+  display: block;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#feffff+9,ddf1f9+55,ddf1f9+63,ddf1f9+66,ddf1f9+66,ddf1f9+77,ddf1f9+84,ddf1f9+87,ddf1f9+96,a0d8ef+100 */
+  background: rgb(254,255,255); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(254,255,255,1) 9%, rgba(221,241,249,1) 55%, rgba(221,241,249,1) 63%, rgba(221,241,249,1) 66%, rgba(221,241,249,1) 66%, rgba(221,241,249,1) 77%, rgba(221,241,249,1) 84%, rgba(221,241,249,1) 87%, rgba(221,241,249,1) 96%, rgba(160,216,239,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(254,255,255,1) 9%,rgba(221,241,249,1) 55%,rgba(221,241,249,1) 63%,rgba(221,241,249,1) 66%,rgba(221,241,249,1) 66%,rgba(221,241,249,1) 77%,rgba(221,241,249,1) 84%,rgba(221,241,249,1) 87%,rgba(221,241,249,1) 96%,rgba(160,216,239,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(254,255,255,1) 9%,rgba(221,241,249,1) 55%,rgba(221,241,249,1) 63%,rgba(221,241,249,1) 66%,rgba(221,241,249,1) 66%,rgba(221,241,249,1) 77%,rgba(221,241,249,1) 84%,rgba(221,241,249,1) 87%,rgba(221,241,249,1) 96%,rgba(160,216,239,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#a0d8ef',GradientType=0 ); /* IE6-9 */
+  padding: 15px 30px 15px 40px;
+  font-size: 14px;
+  color: #454547;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all .3s ease;
+}
+.dws-menu > ul li {
+  position: relative;
+  border-right: 1px solid #c7c8ca;
+}
+.dws-menu > ul li > a i.fa{
+  position: absolute;
+  top: 15px;
+  left: 12px;
+  font-size: 18px;
+}
+.dws-menu > ul li:first-child{
+  border-left: 1px solid #b2b3b5;
+}
+.dws-menu > ul li:last-child{
+  border-right: 1px solid #babbbb;
+}
+.dws-menu li a:hover{
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a9e4f7+0,0fb4e7+100;Ble+3D+%235 */
+  background: rgb(169,228,247); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(169,228,247,1) 0%, rgba(15,180,231,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(169,228,247,1) 0%,rgba(15,180,231,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(169,228,247,1) 0%,rgba(15,180,231,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a9e4f7', endColorstr='#0fb4e7',GradientType=0 ); /* IE6-9 */
+  color: #ffffff;
+  box-shadow: 1px 5px 10px -5px black;
+  transition: all .3s ease;
+}
+
+/*sub menu*/
+.dws-menu li ul{
+  position: absolute;
+  min-width: 150px;
+  display: none;
+}
+.dws-menu li > ul li{
+  border: 1px solid #c7c8ca;
+}
+.dws-menu li > ul li a{
+  padding: 10px;
+  text-transform: none;
+  background: #e4e4e5;
+}
+
+.dws-menu li > ul li ul{
+  position: absolute;
+  right: -150px;
+  top: 0;
+}
+.dws-menu li:hover > ul{
+  display: block;
+}
+
+.dws-menu [type="checkbox"], .dws-menu label.toggleSubmenu{
+  display: none;
+}
+.dws-menu label.toggleMenu{
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#feffff+9,ddf1f9+55,ddf1f9+63,ddf1f9+66,ddf1f9+66,ddf1f9+77,ddf1f9+84,ddf1f9+87,ddf1f9+96,a0d8ef+100 */
+  background: rgb(254,255,255); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(254,255,255,1) 9%, rgba(221,241,249,1) 55%, rgba(221,241,249,1) 63%, rgba(221,241,249,1) 66%, rgba(221,241,249,1) 66%, rgba(221,241,249,1) 77%, rgba(221,241,249,1) 84%, rgba(221,241,249,1) 87%, rgba(221,241,249,1) 96%, rgba(160,216,239,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(254,255,255,1) 9%,rgba(221,241,249,1) 55%,rgba(221,241,249,1) 63%,rgba(221,241,249,1) 66%,rgba(221,241,249,1) 66%,rgba(221,241,249,1) 77%,rgba(221,241,249,1) 84%,rgba(221,241,249,1) 87%,rgba(221,241,249,1) 96%,rgba(160,216,239,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(254,255,255,1) 9%,rgba(221,241,249,1) 55%,rgba(221,241,249,1) 63%,rgba(221,241,249,1) 66%,rgba(221,241,249,1) 66%,rgba(221,241,249,1) 77%,rgba(221,241,249,1) 84%,rgba(221,241,249,1) 87%,rgba(221,241,249,1) 96%,rgba(160,216,239,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#a0d8ef',GradientType=0 ); /* IE6-9 */
+  display: none;
+  padding: 15px 40px;
+  text-transform: uppercase;
+  font-size: 14px;
+  cursor: pointer;
+  position: relative;
+}
+
+.dws-menu label.toggleMenu .fa{
+  position: absolute;
+  top: 15px;
+  left: 12px;
+  font-size: 18px;
+}
+
+@media all and (max-width: 800px) {
+  .dws-menu{
+    overflow: hidden;
+  }
+  .dws-menu ul{
+    display: block;
+    max-height: 0;
+    transition: max-height .3s ease;
+  }
+  .dws-menu li > ul li ul{
+    position: absolute;
+    top: auto;
+    right: auto;
+  }
+  .dws-menu label.toggleMenu{
+    display: block;
+  }
+  input.toggleMenu:checked + label.toggleMenu{
+    background: #000;
+    color: #fff;
+  }
+  input.toggleMenu:checked ~ ul, input.toggleSubmenu:checked ~ ul{
+    display: block;
+    position: relative;
+    max-height: 5000px;
+    transition: max-height 2s ease-in;
+  }
+  .dws-menu label.toggleSubmenu{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    display: block;
+  }
+  input.toggleSubmenu:checked ~ a{
+    background: #454547;
+    color: #fff;
+  }
+  .dws-menu label.toggleSubmenu .fa::before{
+    content: "\f0d7";
+    color: #454547;
+  }
+  .dws-menu label.toggleSubmenu .fa {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+  }
+  .dws-menu input.toggleSubmenu:checked ~ label.toggleSubmenu .fa::before{
+    content: '\f0d8';
+    color: #fff;
+  }
+}
