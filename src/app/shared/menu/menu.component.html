@@ -6,7 +6,16 @@
       <li><a href="#"><i class="fa fa-home"></i>Главная</a></li>
       <li><a routerLink="/data-binding"><i class="fa fa-home"></i>DataBinding</a></li>
       <li><a routerLink="/embeded-directives"><i class="fa fa-home"></i>EmbDirectives</a></li>
-      <li><a routerLink="/events-forms"><i class="fa fa-home"></i>EventsAndForms</a></li>
+      <li>
+        <input type="checkbox" name="toggle" class="toggleSubmenu" id="sub_m3">
+        <a routerLink="/events-forms"><i class="fa fa-home"></i>EventsAndForms</a>
+        <label for="sub_m3" class="toggleSubmenu"><i class="fa"></i></label>
+        <ul>
+          <li><a routerLink="/form-base-on-model">form base on model</a></li>
+          <li><a href="#">Услуга 2</a></li>
+          <li><a href="#">Услуга 3</a></li>
+        </ul>
+      </li>
       <li>
         <input type="checkbox" name="toggle" class="toggleSubmenu" id="sub_m1">
         <a href="#"><i class="fa fa-shopping-cart"></i>Продукция</a>
